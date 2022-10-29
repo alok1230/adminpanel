@@ -8,10 +8,12 @@
     <title>Create Admin panel</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel ="stylesheet" href="util.css">
 
 </head>
 
 <body>
+     <?php include './container/sidebar.php';?> 
     <div class="container">
         <aside>
             <div class="top">
@@ -20,7 +22,7 @@
                     <h2>@<span class="danger">CMW</span></h2>
                 </div>
                 <div class="close" id="close-btn">
-                    <span class="material-icons-sharp">close</span>
+                    <span class="material-icons-sharp">close</span> 
 
 
                 </div>
@@ -60,7 +62,7 @@
                     <h3>Logout</h3>
                 </a>
             </div>
-        </aside>
+        </aside> 
 
         <!-- end of aside -->
         <main>
@@ -69,7 +71,7 @@
                 <input type="date">
             </div>
             <div class="insights">
-         
+
                 <!-- end of sales -->
                 <div class="Admission">
                     <span class="material-icons-sharp">analytics</span>
@@ -82,7 +84,7 @@
                         <div class="progress">
                             <svg>
                                 <circle cx='38' cy='36'></circle>
-                                
+
                             </svg>
                             <div class="number">
                                 <p>81%</p>
@@ -90,12 +92,12 @@
                         </div>
                     </div>
                     <small class="text-muted">Last 2 days</small>
-                        
+
                 </div>
                 <!-- end of  salary expenses -->
-               
+
                 <!-- growth of placement -->
-          
+
                 <div class="placement">
                     <span class="material-icons-sharp">analytics</span>
                     <div class="middle">
@@ -107,7 +109,7 @@
                         <div class="progress">
                             <svg>
                                 <circle cx='38' cy='36'></circle>
-                                
+
                             </svg>
                             <div class="number">
                                 <p>95%</p>
@@ -127,7 +129,7 @@
                         <div class="progress">
                             <svg>
                                 <circle cx='38' cy='36'></circle>
-                                
+
                             </svg>
                             <div class="number">
                                 <p>40%</p>
@@ -135,8 +137,8 @@
                         </div>
                     </div>
                     <small class="text-muted">1 year ago</small>
-                        
-                </div>    
+
+                </div>
 
 
             </div>
@@ -150,7 +152,7 @@
                             <th>Branch</th>
                             <th>Fess</th>
                             <th>pending</th>
-                            
+
                         </tr>
                     </thead>
                     <tbody>
@@ -160,7 +162,7 @@
                             <td>Computer Science</td>
                             <td>1 laks</td>
                             <td class="warning">pending</td>
-                            <td class ="primary">Detalis</td>
+                            <td class="primary">Detalis</td>
                         </tr>
                         <tr>
                             <td>Iqbaal</td>
@@ -168,7 +170,7 @@
                             <td>Computer Science</td>
                             <td>.8 laks</td>
                             <td class="warning">pending</td>
-                            <td class ="primary">Detalis</td>
+                            <td class="primary">Detalis</td>
                         </tr>
                         <tr>
                             <td>Aditya</td>
@@ -176,7 +178,7 @@
                             <td>Art-Side</td>
                             <td>0.5laks</td>
                             <td class="warning">pending</td>
-                            <td class ="primary">Detalis</td>
+                            <td class="primary">Detalis</td>
                         </tr>
                         <tr>
                             <td>Rohan</td>
@@ -184,7 +186,7 @@
                             <td>Electrical</td>
                             <td>1.5 laks</td>
                             <td class="warning">pending</td>
-                            <td class ="primary">Detalis</td>
+                            <td class="primary">Detalis</td>
                         </tr>
                         <tr>
                             <td>Ramesh Roy</td>
@@ -192,36 +194,36 @@
                             <td>Civil</td>
                             <td>0.6 laks</td>
                             <td class="warning">pending</td>
-                            <td class ="primary">Detalis</td>
+                            <td class="primary">Detalis</td>
                         </tr>
                     </tbody>
                 </table>
-                <a href ="#">Show all</a>
+                <a href="#">Show all</a>
             </div>
         </main>
         <!-- End of main -->
 
         <div class="right">
             <div class="top">
-                <button id ="menu-btn">
-                    <span class ="material-icons-sharp">menu</span>
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
 
 
                 </button>
                 <div class="theme-toggler">
-                    <span class ="material-icons-sharp active">light_mode</span>
-                    <span class ="material-icons-sharp">dark_mode</span>
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
                 </div>
                 <div class="profile">
                     <div class="info">
                         <p>Hi@,<b>Alok</b></p>
-                        <small class ="text-muted">Admin</small>
+                        <small class="text-muted">Admin</small>
                     </div>
                     <div class="profile-photo">
                         <img src="./10.jpg">
                     </div>
                 </div>
-                
+
             </div>
             <!-- End of top -->
             <div class="recent-updates">
@@ -234,7 +236,7 @@
                         </div>
                         <div class="message">
                             <p><b>Aditya</b> I am not comfartable BA art plzz provide me BA English. </p>
-                            <small class ="text-muted">2 days ago </small>
+                            <small class="text-muted">2 days ago </small>
 
                         </div>
                     </div>
@@ -244,9 +246,9 @@
 
                         </div>
                         <div class="message">
-                            <p><b>Iqball</b> I am not comfartable B.S.C math plzz provide B.S.C  Bio English. </p>
-                            <small class ="text-muted">4 days ago </small>
-                            
+                            <p><b>Iqball</b> I am not comfartable B.S.C math plzz provide B.S.C Bio English. </p>
+                            <small class="text-muted">4 days ago </small>
+
                         </div>
                     </div>
                     <div class="update">
@@ -256,8 +258,8 @@
                         </div>
                         <div class="message">
                             <p><b>Rohit</b> I am not comfartable computer Science a plzz provide me BA English. </p>
-                            <small class ="text-muted">5 days ago </small>
-                            
+                            <small class="text-muted">5 days ago </small>
+
                         </div>
                     </div>
                 </div>
@@ -268,19 +270,54 @@
                 <div class="coures">
                     <div class="icon">
                         <span class="material-icons-sharp">menu_book</span>
-                            
+
                     </div>
                     <div class="right">
                         <div class="info">
                             <h3>B.tech,In Different-Different Branch</h3>
-                            <small  class ="text-muted">In 1995</small>
+                            <small class="text-muted">In 1995</small>
                         </div>
-                        <h5 class="sucess">90%</h5>
+                        <h5 class="sucess">90.33</h5>
+                        <!-- <h3>15</h3> -->
+                    </div>
+                </div>
+                <div class="college-hostel">
+                    <div class="coures">
+                        <div class="icon">
+
+
+                            <span class="material-icons-sharp">gite</span>
+
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>College Hostel</h3>
+                                <small class="text-muted">In a college hostel is fully free of all students only 500
+                                    hunderd
+                                    rupess. </small>
+                            </div>
+                            <h5 class="faclity">95.22</h5>
+                            <!-- <h3>4</h3> -->
+                        </div>
+                    </div>
+                    <div class="coures">
+                        <div class="icon">
+                            <span class="material-icons-sharp">park</span>
+
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>College Campus</h3>
+                                <small class="text-muted">My college campus is to good compare other my city
+                                    college.</small>
+                            </div>
+                            <h5 class="area">96.44</h5>
+                            <!-- <h3>30</h3> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
