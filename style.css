@@ -51,7 +51,9 @@ body {
     height: 100vh;
     font-family: poppins, sans-serif;
     font-size: 0.88rem;
-    background: var(--color-background);
+    background:#17a0a3;
+
+    
     user-select: none;
     overflow-x: hidden;
     /* color: var(--color-dark); */
@@ -60,7 +62,7 @@ body {
 
 .container {
     display: grid;
-    width: 96%;
+    /* width: 96%; */
     margin: 0 auto;
 
     gap: 1.8rem;
@@ -150,7 +152,12 @@ b {
 
 aside {
     height: 100vh;
-    background: gray;
+    background: #125062;
+    margin-right: 2rem;
+    /* margin-left: none; */
+    /* background: #0048cc; */
+    /* background: #733502; */
+    /* background: rgb(128, 128, 128); */
 }
 
 aside.top {
@@ -178,8 +185,10 @@ aside .close {
 }
 
 aside .sidebar {
-    background: #41f1b6;
-    
+    background: #125062;
+    /* background:  #0f2d34; */
+    /* background: #41f1b6; */
+
     display: flex;
     flex-direction: column;
     height: 86vh;
@@ -193,7 +202,8 @@ aside h3 {
 
 aside .sidebar a {
     display: flex;
-    color: var(--color-info-dark);
+    color:white;
+    /* color: var(--color-info-dark); */
     margin-left: 2rem;
     gap: 1rem;
     align-items: center;
@@ -213,12 +223,14 @@ aside .sidebar a:last-child {
     bottom: 2rem;
     width: 100%;
 }
-aside .sidebar a.active{
+
+aside .sidebar a.active {
     background: var(--color-light);
     color: var(--color-primary);
     margin-left: 0;
 }
-aside .sidebar a.active:before{
+
+aside .sidebar a.active:before {
     content: "";
     width: 6px;
     height: 100%;
@@ -226,55 +238,65 @@ aside .sidebar a.active:before{
 
 
 }
-aside .sidebar a.active span{
+
+aside .sidebar a.active span {
     color: var(--color-primary);
     margin-left: calc(1rem - 3px);
 }
 
-aside .sidebar a:hover{
+aside .sidebar a:hover {
     color: var(--color-primary);
 }
 
-aside .sidebar a:hover span{
+aside .sidebar a:hover span {
     margin-left: 1rem;
 
 }
 
-main{
+main {
     margin-top: 1.4rem;
 
-}   
-main .date{
+}
+
+main .date {
     display: inline-block;
-    background: var(--color-light);
+    background: #14757f;
+    /* background:  #fe961b; */
+    /* background: var(--color-light); */
     border-radius: var(--border-radious-1);
     margin-top: 1rem;
     padding: 0.5rem 1.6rem;
 }
 
-main .date input[type="date"]{
+main .date input[type="date"] {
     background: transparent;
     color: var(--color-dark);
 }
-main .insights{
+
+main .insights {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
 }
-main .insights > div{
-    background: var(--color-white);
+
+main .insights>div {
+    /* background: #4e0082; */
+    background:  #14757f;
+    /* background: #bfff60; */
+    /* background: var(--color-white); */
     padding: var(--card-padding);
     border-radius: var(--card-border-radious);
     margin-top: 1rem;
     /* box-shadow: var(--box-shadow); */
-    transition: all 300ms ease; 
+    transition: all 300ms ease;
 
 }
-main .insights > div:hover{
+
+main .insights>div:hover {
     box-shadow: none;
 }
 
-main .insights > div span{
+main .insights>div span {
     background: var(--color-primary);
     padding: 0.5rem;
     border-radius: 50%;
@@ -282,38 +304,43 @@ main .insights > div span{
     font-size: 2rem;
 }
 
-main .insights > div.expenses span{
+main .insights>div.expenses span {
     background-color: var(--color-danger);
 
 }
-main .insights > div.income span{
+
+main .insights>div.income span {
     background: var(--color-success);
 }
-main .insights > div .middle {
+
+main .insights>div .middle {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 
 }
-main .insights h3{
+
+main .insights h3 {
     margin: 1rem 0 0.6rem;
     font-size: 1rem;
 }
-main .insights .progress{
+
+main .insights .progress {
     position: relative;
     width: 92px;
     height: 92px;
     border-radius: 50%;
 }
-main .insights svg{
-    
+
+main .insights svg {
+
     width: 7rem;
     height: 7rem;
 }
 
-main .insights svg circle{
-    fill:none;
+main .insights svg circle {
+    fill: none;
     stroke: var(--color-primary);
     stroke-width: 14;
     stroke-linecap: round;
@@ -322,24 +349,24 @@ main .insights svg circle{
     stroke-dashoffset: 92;
 }
 
-main .insights .Admission svg circle{
+main .insights .Admission svg circle {
     stroke-dashoffset: -30;
     stroke-dasharray: 200;
 }
 
-main .insights .income svg circle{
+main .insights .income svg circle {
     stroke-dashoffset: 110;
     stroke-dasharray: 35;
 }
 
-main .insights .placement svg circle{
+main .insights .placement svg circle {
     stroke-dashoffset: 18;
     stroke-dasharray: 115;
 }
 
- main .insights .progress .number{
+main .insights .progress .number {
     position: relative;
-    top:0;
+    top: 0;
     left: 0;
     height: 100%;
     width: 100%;
@@ -347,68 +374,84 @@ main .insights .placement svg circle{
     justify-content: center;
     align-items: center;
 
- }
+}
 
 
- main .insights small{
+main .insights small {
     margin-top: 1.3rem;
     display: block;
- }
+}
 
- /* Recent-order */
- main .recent-data{
+/* Recent-order */
+main .recent-data {
     margin-top: 3.5rem;
- }
+}
 
- main .recent-data h2{
+main .recent-data h2 {
     margin-bottom: 0.8rem;
- }
+}
 
-  main .recent-data table{
-    background: rgb(135, 235, 230);
+main .recent-data table {
+    background: #14757f;
+    /* background: #825900; */
+    /* background: #ffc3ff; */
+    /* background: #8effeb; */
+    /* background: rgb(135, 235, 230); */
+    /* background: var(--color-white); */
     width: 100%;
     border-radius: var(--card-border-radious);
     padding: var(--card-padding);
     text-align: center;
     /* box-shadow: var(--box-shadow); */
     transition: all 300ms ease;
-  }
-  main .recent-data table:hover{
+}
+
+main .recent-data table:hover {
     box-shadow: none;
+    color: blue;
 
-  }
+}
 
-  main table tbody td{
+main table tbody td {
     height: 2.8rem;
     border-bottom: 1px solid var(--color-light);
-    color:var(--color-dark-variant);
-  }
-  main table tbody tr:last-child td{
-    border:  none;
-  }
-  main .recent-data a{
+    color: var(--color-dark-variant);
+    color:white;
+}
+main table tbody td:hover{
+    color:red;
+}
+
+main table tbody tr:last-child td {
+    border: none;
+}
+
+
+main .recent-data a {
     text-align: center;
     display: block;
     margin: 1rem auto;
     color: var(--color-primary);
-  }
+}
 
-  .right{
+
+.right {
     margin-top: 1.4rem;
     margin-left: 1.6rem;
-  }
-  .right .top{
+}
+
+.right .top {
     display: flex;
     justify-content: end;
     gap: 2rem;
     /* background: gray; */
-  }
+}
 
-  .right .top button{
+.right .top button {
     display: none;
-  }
+}
 
-  .right .theme-toggler{
+.right .theme-toggler {
     background: var(--color-light);
     display: flex;
     justify-content: space-between;
@@ -417,42 +460,46 @@ main .insights .placement svg circle{
     width: 4.2rem;
     cursor: pointer;
     border-radius: var(--border-radious-1);
-  }
+}
 
-  .right .theme-toggler span{
+.right .theme-toggler span {
     font-size: 1.2rem;
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .right .theme-toggler span.active{
+.right .theme-toggler span.active {
     background: var(--color-primary);
-    color: white;
+    color:white;
     border-radius: var(--border-radious-1);
 
-  }
-  .right .top .profile{
+}
+
+.right .top .profile {
     display: flex;
-    gap :2rem;
+    gap: 2rem;
     text-align: right;
-  }
+}
 
 /* RECENT UPDATE */
 
-.right .recent-updates{
+.right .recent-updates {
     margin-top: 1rem;
 
-    
+
 }
-.right .recent-updates h2{
+
+.right .recent-updates h2 {
     margin-bottom: 0.8rem;
 }
 
-.right .recent-updates .updates{
-    background: var(--color-white);
+.right .recent-updates .updates {
+    background: #14757f;
+    /* background:  #03fadd; */
+    /* background: var(--color-white); */
     padding: var(--card-padding);
     border-radius: var(--card-border-radious);
     /* box-shadow: var(--box-shadow); */
@@ -460,17 +507,120 @@ main .insights .placement svg circle{
 
 
 }
-.right .recent-updates .updates:hover{
-    box-shadow:none ;
+
+.right .recent-updates .updates:hover {
+    box-shadow: none;
 }
 
-.right .recent-updates .updates .update{
+.right .recent-updates .updates .update {
     display: grid;
     grid-template-columns: 2.6rem auto;
     gap: 1rem;
     margin-bottom: 1rem;
 }
+.right .admission-analysis{
+    margin-top: 2rem;
+}
+.right .admission-analysis h2{
+    margin-bottom: 0.8rem;
+}
 
+.right .admission-analysis .coures{ 
+    background: #14757f;
+    /* background:  #8effeb; */
+    /* background: #9703fa;  */
+    /* background: var(--color-white); */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radious-3);
+    /* box-shadow: var(--box-shadow); */
+    transition: all 300ms ease;
+    
 
+}
 
+.right .admission-analysis .coures .right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
 
+.right .admission-analysis  .college-hostel .icon{
+    background: var(--color-danger);
+}
+
+.right .admission-analysis .text-muted{
+    color: white;
+}
+.recent-updates .message p{
+    color: white;
+}
+
+.recent-updates .message b{
+    color: whitesmoke;
+}
+
+.recent-updates .message .text-muted{
+    color: #ff7782;
+}
+
+.placement .text-muted{
+    color: white;
+}
+
+.placement .number p{
+    color: white;
+}
+.income .number p{
+    color: white;
+
+}
+
+.income .text-muted{
+    color: white;
+}
+
+.Admission .number p{
+    color: white;
+
+}
+
+.Admission  .text-muted{
+    color: white;
+}
+
+.Admission h3{
+    color: white;
+}
+.Admission h1{
+    color:  white;
+}
+
+.placement h3{
+    color: white;
+
+}
+
+.placement h1{
+    color: white;
+}
+
+.income h3{
+    color:  white;
+}
+
+ .income h1 {
+    color: white;
+ }
+
+ /* .Dashboard{
+    color: white;
+ } */
+ main h1{
+    color: white;
+ }
